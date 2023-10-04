@@ -1,0 +1,898 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 3000px;
+        font-family: "Cairo", sans-serif;
+      
+}
+a {
+    text-decoration: none;
+}
+.all-y {
+    padding: 120px 0px;
+}
+.bd-y {
+    padding: 200px 0px 0px 0px;
+}
+.section-header {
+    text-align: center;
+}
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+.section-header .line {
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: royalblue;
+    margin: 0px auto 70px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    width: 100% ;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    position: fixed ;
+    top: 0 ; 
+    left: 0;
+    opacity: 0.7 ;
+    z-index: 30;
+}
+
+.img1 {
+    width: 150px;
+    height: 60px ;
+    margin-left: 150px;
+    float: left;
+}
+
+.list {
+    list-style-type: none ;
+    float: right;
+    margin-right: 150px;
+
+}
+
+ .list li {
+      display: inline-block ;
+      margin-left: 25px;
+      color: #fff;
+      font-size: 22px;
+}
+
+.list  li  a {
+    text-decoration: none ;
+    color: #fff;
+}
+
+ .div1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/slider2.jpg) ;
+    position: relative;
+    /* z-index: 20; */
+ }
+
+ .overley {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .content {
+    width: 60%;
+    /* hero image  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%  , -50%  );
+    text-align: center;
+ }
+ .title10 {
+    color: #fff;
+    font-size: 55px;
+ }
+
+ .p10 {
+    color: #f0f0f0;
+    letter-spacing: 2px ;
+    margin: 15px  0px;
+ }
+
+ .btn {
+    width: 135px;
+    height: 47px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-right: 12px;
+    /* padding: 16px; */
+ }
+ .btn2 {
+    background-color: blue;
+    color: #fff;
+ }
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+
+/* Start About */
+.about{
+    padding: 120px 0;
+}
+
+.about-content {
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+}
+
+.about-card {
+    text-align: center;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-pos{
+    position: relative;
+}
+.card-pos:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+
+
+.about-card {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid #888;
+    padding: 30px 15px;
+}
+.about-card.cm{
+    margin: 0 5%;
+}
+.icon {
+    color: #6195ff;
+    margin-bottom: 10px;
+}
+.about-card-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color .5s;
+}
+
+.about-content p{
+    letter-spacing: 0px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: #899;
+}
+
+.about-item-link{
+    color: #6195ff;
+    text-transform: capitalize;
+}
+.clear {
+    clear: both;
+}
+.card-pos:hover:after {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+
+.card-pos:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+.about-card-title:hover{
+    color: white;
+}
+/*End About */
+/*Start portfolio */
+.hospital {
+    background-color: #e8e8e8;
+}
+.section-header {
+    text-align: center;
+}
+
+/*End portfolio */
+
+/*  Start after */
+.hospital {
+    background-color: rgb(232, 232, 232);
+}
+.pd-y {
+    padding: 120px 0px;
+}
+.section-header {
+    text-align: center;
+}
+
+.hospital-content {
+    overflow: hidden;
+}
+.hospital-item {
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+}
+.hospital-item.cc {
+    margin: 0 5%;
+}
+.hospital-item img {
+    width: 100%;
+}
+.hospital-item .layer-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease 0s;
+}
+.hospital-item:hover .layer-content {
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content .layer-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.layer-content .category {
+    color: rgb(97, 149, 255);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ease 0s, opacity 0.5s ease 0s;
+}
+.hospital-item:hover .layer-content-title, .hospital-item:hover .layer-content a, .hospital-item:hover .layer-content .category {
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content-title {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ease 0.4s, opacity 0.5s ease;
+}
+.hospital-item:hover .layer-content {
+    opacity: 1;
+    visibility: visible;
+}
+.hospital-item .layer-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease 0s;
+}
+.layer-content a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(97, 149, 255);
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ease 0.6s, opacity 0.5s ease;
+}
+.layer-content a i {
+    line-height: 30px;
+}
+
+/*  End after */
+
+/* Start Offer */
+.offer-content {
+    overflow: hidden;
+}
+.offer-item {
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(168, 168, 168);
+    border-image: initial;
+    padding: 30px 15px 30px 70px;
+}
+.offer-item.fw{
+    margin: 0% 5%;
+}
+.ltr {
+    position: relative;
+}
+
+.offer-item .icon {
+    position: absolute;
+    left: 15px;
+    top: 26px;
+    color: #6195ff;
+}
+.icon {
+    color: rgb(97, 149, 255);
+    margin-bottom: 10px;
+}
+
+.offer-item-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: all 1s ease 0s;
+}
+
+.offer-item.ltr:hover .offer-item-title {
+    color: rgb(255, 255, 255);
+}
+
+.offer-item-desc {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: rgb(153, 153, 153);
+}
+.ltr:hover:after {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.ltr:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+/* End Offer */
+
+/* Start Services */
+.service {
+    background-color: rgb(249, 249, 249);
+    margin-top: 380px;
+}
+.service-item {
+    width: 50%;
+    float: left;
+}
+.service-item .section-header {
+    text-align: left;
+}
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+.service-item .section-header .line {
+    margin: 0px 0px 45px;
+}
+.section-header .line {
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: royalblue;
+    margin: 0px auto 70px;
+}
+.service-item-desc {
+    padding-right: 20px;
+    color: rgb(153, 153, 153);
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    margin-bottom: 13px;
+    color: rgb(153, 153, 153);
+}
+.service-list li i {
+    color: rgb(97, 149, 255);
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(97, 149, 255);
+    border-image: initial;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.service-item {
+    width: 50%;
+    float: left;
+}
+.klo {
+    width: 480px;
+    height: 400px;
+}
+.service-bullets {
+    text-align: center;
+    list-style: none;
+}
+
+.service-bullets li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgb(168, 168, 168);
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.service-bullets li:hover {
+    background-color: #6195ff;
+}
+
+.service-bullets li.active {
+    background-color: #6195ff;
+}
+/* End Services */
+
+/* Start numbers */
+.numbers {
+    position: relative;
+    background-image: url(../images/blockqoute-bg.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.numbers-items {
+    padding-top: 130px;
+    overflow: hidden;
+}
+.number-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.number-item .icon {
+    color: rgb(97, 149, 255);
+    margin-bottom: 15px;
+}
+.number-item-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.number-item-text {
+    color: rgb(255, 255, 255);
+}
+/* End numbers */
+
+/* Start pricing */
+.pricing-plans {
+    overflow: hidden;
+}
+.pricing-item {
+    position: relative;
+}
+.pricing-item {
+    float: left;
+    width: 30%;
+    padding: 30px 15px;
+    border: 1px solid #a8a8a8;
+    text-align: center;
+}
+.pricing-item.pr{
+    margin: 0 5%;
+}
+.pricing-item-text {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: rgb(153, 153, 153);
+}
+.pricing-item-permonth {
+    width: 100px;
+    height: 100px;
+    padding: 12px 0px;
+    margin: 20px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(97, 149, 255);
+    border-image: initial;
+    border-radius: 50%;
+}
+.doller {
+    font-size: 31px;
+}
+
+.month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pricing-list {
+    list-style: none;
+}
+.pricing-list li {
+    color: rgb(153, 153, 153);
+    line-height: 1.8;
+}
+.pricing-item-purchase {
+    display: block;
+    width: 120px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(97, 149, 255);
+    border-image: initial;
+    margin: 15px auto auto;
+    padding: 4px;
+    transition: color 0.5s ease 0s;
+}
+.pricing-item:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.pricing-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(11, 12, 12);
+    opacity: 0.5;
+    transition: all 0.5s ease 0s;
+}
+/* End pricing */
+
+/* Start testimonial */
+.testimonial {
+    position: relative;
+    background-image: url(../images/bread-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.testimonial-content {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+.testimonial-item {
+    float: left;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+}
+
+.testimonial-toplayer {
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding: 90px 20px 10px 150px;
+}
+.testimonial-toplayer img {
+    position: absolute;
+    top: 82px;
+    left: 65px;
+    border-radius: 50%;
+}
+.testimonial-toplayer span {
+    color: rgb(97, 149, 255);
+}
+.testimonial-desc {
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-left: 76px;
+    font-size: 14px;
+}
+/* End testimonial */
+
+/* Start Team */
+
+
+.team-item {
+    float: left;
+    background-color: rgb(175, 174, 174);
+    width: 30%;
+    padding: 14px  19px;
+    text-align: center;
+    position: relative;
+}
+.dd {
+    margin: 0px  5%;
+}
+
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    
+}
+.team-img  img {
+    width: 100%;
+}
+.team-overley {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5) ;
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: 1s ;    
+}
+
+.team-item:hover  .team-overley {
+    opacity: 0.6 ;
+    visibility: visible;
+    
+}
+.team-overley  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(32, 205, 248);
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto ;
+}
+.team-overley  a  i  {
+    line-height: 40px ;
+}
+.team-info .team-info-sp {
+    color: rgb(153, 153, 153);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+/* pseudo elements  :  after  &  before  */
+
+.team-item::after {
+    position: absolute;
+    content: "";
+
+    width: 100% ;
+    height: 0 ;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: rgb(14, 15, 14) ;
+    opacity: 0 ;
+    transition: 1s;
+}
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+}
+.team-info .team-info-title:hover::after{
+    color: white;
+    
+}
+.team-info .team-info-sp:hover::after {
+   color: #6195ff;
+}
+
+/* End Team */
+
+/* Start blog */
+
+.blog-content {
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+.blog-item {
+    float: left;
+    width: 30%;
+    background-color: #fff;
+    position: relative;
+}
+.blog-item-img {
+    width: 100%;
+    margin-left: 23px;
+}
+.blog-item-img img {
+    width: 93%;
+}
+
+.blog-info {
+    padding: 20px;
+}
+.blog-list {
+    list-style: none;
+    margin: 10px 0px;
+}
+.blog-list li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 5px;
+}
+.blog-list li i {
+    color: rgb(97, 149, 255);
+}
+.blog-title {
+    font-weight: bold;
+    margin: 20px 0px 25px;
+}
+.blog-desc {
+    color: rgb(153, 153, 153);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.blog-link {
+    color: rgb(97, 149, 255);
+}
+.blog-item.mg {
+    margin: 0px 5%;
+}
+.blog-item {
+    float: left;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.blog-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.blog-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0%;
+    bottom: 0px;
+    opacity: 0;
+    background-color: rgb(97, 149, 255);
+    transition: all 1s ease 0s;
+}
+/* End blog */
+
+/* Start footer */
+.footer {
+    background-color: #4c4d52;
+    text-align: center;
+    height: 300px;
+    padding: 60px 0;
+}
+.mmg {
+    width: 160px;
+    height: 70px;
+}
+.footer-links {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    background-color: #6195ff;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+
+.footer-links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0px 8px;
+}
+.footer-links li::after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    background-color: rgb(9, 84, 236);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0%;
+    bottom: 0px;
+    transition: all 0.3s ease 0s;
+}
+
+
+.footer p {
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.footer-links li:hover::after {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+/* End footer */
